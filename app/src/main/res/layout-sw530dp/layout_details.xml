@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/layout_details_titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textSize="40sp"
+        tools:text="Salt Lake City"/>
+
+    <TextView
+        android:id="@+id/layout_details_subTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textSize="30sp"
+        tools:text="Mostly Cloudy"/>
+
+    <TextView
+        android:id="@+id/layout_details_temperatureText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textSize="150sp"
+        tools:text="50"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forecast"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#CCCCCC"
+        android:layout_height="2dp"/>
+
+    <ListView
+        android:id="@+id/layout_details_forecastList"
+        android:layout_width="match_parent"
+        android:divider="#77CCCCCC"
+        android:dividerHeight="2dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+</LinearLayout>
